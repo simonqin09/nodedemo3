@@ -1,0 +1,44 @@
+<!-- Client-side code -->
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- mobile first -->
+	<title>Colibri VF61 node.js webserver</title>
+	<!-- Add jQuery library -->
+	<script src="jquery-1.12.3.js"></script>
+	<!-- Using bootstrap -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="client.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Access to the VF61 GPIO using Node.js and AJAX</h1>
+		<div class="row">
+			<div class="col-sm-12">
+				<input type="button" class="btn btn-block btn-info" id="MSG" value="Application running">
+			</div>
+		</div>
+		<h2>LEDs</h2>
+		<div class="row">
+			<div class="col-sm-4">
+				<input type="button" class="btn btn-block true_btn" id="LED1">
+			</div>
+			<div class="col-sm-4">
+				<input type="button" class="btn btn-block true_btn" id="LED2">
+			</div>
+		</div>
+		<h2>Switches</h2>
+		<div class="row">
+			<div class="col-sm-4">
+				<input type="button" class="btn btn-block" id="SW1">
+			</div>
+			<div class="col-sm-4">
+				<input type="button" class="btn btn-block" id="SW2">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
